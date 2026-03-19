@@ -25,11 +25,7 @@ export default function About() {
             solutions for homes, offices, and businesses.
           </p>
 
-          <p className="text-gray-700">
-            <strong>Location:</strong><br />
-            Mabuzu Street, Tembisa Section, Mhluzi, South Africa
-          </p>
-
+           
         </div>
 
         <Image
