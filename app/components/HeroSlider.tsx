@@ -78,7 +78,7 @@ export default function HeroSlider() {
             <div className="flex flex-col md:flex-row gap-4">
 
               <a
-                href="https://wa.me/27726248177"
+                href="https://wa.me/27682221989"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-3 rounded-xl text-white font-semibold hover:opacity-90 transition shadow-lg"

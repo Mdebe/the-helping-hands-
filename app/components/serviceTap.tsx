@@ -126,7 +126,7 @@ export default function ServicesTabs() {
               </p>
 
               <a
-                href="https://wa.me/27726248177"
+                href="https://wa.me/27682221989"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block px-6 py-3 rounded-xl text-white font-semibold hover:scale-105 transition-transform"
