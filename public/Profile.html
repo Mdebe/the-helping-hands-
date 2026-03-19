@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>The Helping Hands - Proposal Pack</title>
+
+<style>
+@page { size: A4; margin: 14mm; }
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #e9eef6;
+  color: #1f2937;
+}
+
+/* VARIABLES */
+:root {
+  --primary: #004295;
+  --secondary: #0ea5e9;
+  --muted: #64748b;
+  --border: #dbe4f0;
+}
+
+/* ================= PAGE ================= */
+.page {
+  width: 100%;
+  max-width: 210mm;
+  min-height: 100vh;
+  background: white;
+  margin: 20px auto;
+  padding: 20px;
+  position: relative;
+  page-break-after: always;
+  border-radius: 8px;
+}
+
+/* Desktop A4 exact */
+@media print {
+  .page {
+    width: 210mm;
+    height: 297mm;
+    margin: 0;
+    border-radius: 0;
+  }
+}
+
+/* ================= CONTENT ================= */
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  min-height: calc(100% - 60px);
+}
+
+/* ================= BACKGROUND ================= */
+.bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.blob1, .blob2 {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.06;
+}
+
+.blob1 {
+  width: 300px;
+  height: 300px;
+  background: var(--primary);
+  top: -100px;
+  left: -100px;
+}
+
+.blob2 {
+  width: 260px;
+  height: 260px;
+  background: var(--secondary);
+  bottom: -100px;
+  right: -100px;
+}
+
+/* ================= TEXT ================= */
+.center {
+  text-align: center;
+  z-index: 2;
+  position: relative;
+}
+
+.logo-img {
+  width: 120px;
+  height: auto;
+  margin: 0 auto 10px auto;
+  display: block;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.subtitle {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.badge {
+  display: inline-block;
+  margin-top: 6px;
+  background: var(--primary);
+  color: white;
+  font-size: 10px;
+  padding: 5px 12px;
+  border-radius: 20px;
+}
+
+/* ================= CARDS ================= */
+.card {
+  background: #f4f7fb;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px;
+  z-index: 2;
+}
+
+.card h3 {
+  margin: 0 0 6px 0;
+  font-size: 13px;
+  color: var(--primary);
+}
+
+p, li {
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+ul {
+  padding-left: 18px;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+  position: absolute;
+  bottom: 12px;
+  left: 20px;
+  right: 20px;
+  font-size: 10px;
+  text-align: center;
+  border-top: 1px solid var(--border);
+  padding-top: 5px;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+  .page {
+    padding: 16px;
+    margin: 10px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .subtitle {
+    font-size: 11px;
+  }
+
+  .logo-img {
+    width: 100px;
+  }
+
+  .card {
+    padding: 10px;
+  }
+
+  p, li {
+    font-size: 11px;
+  }
+
+  .footer {
+    font-size: 9px;
+  }
+
+  .blob1 {
+    width: 200px;
+    height: 200px;
+  }
+
+  .blob2 {
+    width: 180px;
+    height: 180px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ================= PAGE 1 ================= -->
+<div class="page">
+<div class="bg"><div class="blob1"></div><div class="blob2"></div></div>
+
+<div class="content">
+
+<div class="center">
+<img src="images/logo.png" class="logo-img"/>
+<div class="title">THE HELPING HANDS</div>
+<div class="subtitle">Integrated Service Solutions</div>
+<div class="badge">BBBEE LEVEL 1</div>
+</div>
+
+<div class="card">
+<h3>Business Introduction</h3>
+<p>
+The Helping Hands is a proudly South African, 100% Black youth-owned company established in 2022.
+We provide professional multi-service solutions including cleaning, renovation, maintenance, and
+personal assistance services across residential, commercial, and industrial sectors.
+</p>
+</div>
+
+<div class="card">
+<h3>Business Approach</h3>
+<p>
+Our experienced staff ensure efficient and cost-effective service delivery. We provide full
+support from quotation through to project completion. Our services are available 24/7 and
+focus on quality, safety, and customer satisfaction.
+</p>
+</div>
+
+<div class="card">
+<h3>Operational Capability</h3>
+<p>
+We operate with skilled teams, modern equipment, and strong supervision systems to ensure
+consistent, high-quality outcomes across all projects.
+</p>
+</div>
+
+</div>
+
+<div class="footer">Confidential Proposal</div>
+</div>
+
+<!-- ================= PAGE 2 ================= -->
+<div class="page">
+<div class="bg"><div class="blob1"></div><div class="blob2"></div></div>
+
+<div class="content">
+
+<div class="center">
+<div class="title">Company Profile</div>
+</div>
+
+<div class="card">
+<h3>Mission</h3>
+<p>
+Committed to providing superior services that cater for customer needs while maintaining
+continuous improvement and excellence.
+</p>
+</div>
+
+<div class="card">
+<h3>Vision</h3>
+<p>
+To be the regional leader in service delivery, empowering youth and communities while
+building long-term client relationships.
+</p>
+</div>
+
+<div class="card">
+<h3>Core Values</h3>
+<ul>
+<li>Integrity and professionalism</li>
+<li>Quality service delivery</li>
+<li>Teamwork and leadership</li>
+<li>Customer satisfaction</li>
+<li>Continuous growth</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Business Strategy</h3>
+<p>
+We deliver structured services with a focus on deadlines, productivity, and efficiency,
+ensuring clients receive reliable and professional results.
+</p>
+</div>
+
+</div>
+
+<div class="footer">Page 2</div>
+</div>
+
+<!-- ================= PAGE 3 ================= -->
+<div class="page">
+<div class="bg"><div class="blob1"></div><div class="blob2"></div></div>
+
+<div class="content">
+
+<div class="center">
+<div class="title">Services</div>
+</div>
+
+<div class="card">
+<h3>Cleaning Services</h3>
+<ul>
+<li>Residential & commercial cleaning</li>
+<li>Deep cleaning & sanitation</li>
+<li>Roof, window, and paving cleaning</li>
+<li>Waste removal</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Renovation & Maintenance</h3>
+<ul>
+<li>Painting and waterproofing</li>
+<li>Tiling and flooring</li>
+<li>Roof and ceiling repairs</li>
+<li>Handyman services</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Personal Services</h3>
+<ul>
+<li>Laundry and ironing</li>
+<li>Maid assistance</li>
+<li>Transport services</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>BBBEE Impact</h3>
+<p>
+A 100% Black youth-owned company committed to empowerment, job creation,
+and community development.
+</p>
+</div>
+
+</div>
+
+<div class="footer">Page 3</div>
+</div>
+
+</body>
+</html>
