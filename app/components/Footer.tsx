@@ -55,12 +55,11 @@ export default function Footer() {
             {/* COMPANY PROFILE LINKS */}
             <div className="flex gap-3 mt-4 text-sm">
               <a
-                href="/profile.html"
-                target="_blank"
-                className="text-[#004295] hover:underline font-medium"
-              >
-                View Profile
-              </a>
+  href="/company-profile"
+  className="text-[#004295] hover:underline font-medium"
+>
+  Company Profile
+</a>
 
               <a
                 href="/company-profile.pdf"
