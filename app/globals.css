@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f7f9fc;
+  --foreground: #0b1324;
+  --brand: #004295;
+  --brand-dark: #002d67;
+  --accent: #25d366;
+  --muted: #64748b;
+  --surface: #ffffff;
+  --line: #e5eaf2;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+::selection { background: rgba(0,66,149,.18); color: #001b40; }
+
+@keyframes float {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-float { animation: float 5s ease-in-out infinite; }
+.animate-fadeUp { animation: fadeUp .7s ease-out both; }
+
+.container-shell {
+  width: min(1180px, calc(100% - 40px));
+  margin-inline: auto;
+}
+.section-pad { padding-block: clamp(64px, 8vw, 104px); }
+.glass {
+  background: rgba(255,255,255,.82);
+  border: 1px solid rgba(226,232,240,.85);
+  box-shadow: 0 20px 60px rgba(15,23,42,.07);
+  backdrop-filter: blur(16px);
+}
+.soft-grid {
+  background-image: linear-gradient(rgba(0,66,149,.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,66,149,.035) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+}
